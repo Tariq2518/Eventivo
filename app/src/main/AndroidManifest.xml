@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.raredevz.eventivo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Admin.Ac_User_accounts"></activity>
+        <activity android:name=".Admin.Ac_ManagerRequests" />
+        <activity android:name=".Admin.Ac_Venue_Feedback"/>
+        <activity android:name=".User.Ac_Feedback"/>
+        <activity
+            android:name=".Admin.Ac_AdminHome"
+            android:label="@string/title_activity_ac__admin_home">
+
+            <!--             <intent-filter>-->
+            <!--             <action android:name="android.intent.action.MAIN" />-->
+
+
+            <!--             <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--             </intent-filter>-->
+        </activity>
+        <activity android:name=".User.Ac_Book_Venue" />
+        <activity android:name=".Manager.Ac_EditVenue" />
+        <activity
+            android:name=".Chat.ChatDetailsActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity android:name=".Chat.MainActivity" />
+        <activity android:name=".User.Ac_Venue_Details" />
+        <activity android:name=".Manager.Ac_AddVanue" />
+        <activity android:name=".Manager.Ac_ManageBooking" />
+        <activity android:name=".Manager.Ac_Payments" /> <!-- <activity android:name=".MainActivity" /> -->
+        <activity android:name=".Ac_Manager_Panel" />
+        <activity android:name=".User.Ac_AboutUs" />
+        <activity android:name=".Account.Ac_Manager_Login" />
+        <activity android:name=".User.Ac_TermsAndCondition" />
+        <activity android:name=".User.Ac_MyBookings" />
+        <activity android:name=".User.Ac_Home">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <categoryr android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".Account.VerifyNumber" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Account.Ac_ManagerSignUp" />
+        <activity android:name=".Account.Ac_UserSignup" />
+        <activity android:name=".Account.Ac_Login" />
+        <activity android:name="com.sucho.placepicker.PlacePickerActivity" />
+        <activity android:name=".Ac_Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ML.compare_vanues"/>
+    </application>
+
+</manifest>

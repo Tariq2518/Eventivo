@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/appColor</item>
+    </style>
+
+    <style name="spinnerStyle"  parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:padding">5sp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="divider">@drawable/horizontal_line</item>
+        <item name="background">@color/transparent</item>
+        <item name="android:popupBackground">@color/transparent</item>
+    </style>
+
+    <style name="AppFullScreenTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppFullScreenTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

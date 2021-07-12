@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manager.Ac_EditVenue"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Venue Details"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:textSize="22dp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_baseline_delete_forever_24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:onClick="deleteVenue"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            >    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:elevation="10dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_sample_vanue"
+                android:scaleType="centerCrop"
+                android:id="@+id/imgVenue"/>
+        </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_baseline_edit_24"
+                android:id="@+id/tvEditImage"
+                android:text="Edit Image"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_edt"
+                android:hint="Name"
+                android:singleLine="true"
+                android:paddingLeft="15dp"
+                android:textColor="@android:color/black"
+                android:inputType="text"
+                android:id="@+id/txtVenueName"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_edt"
+                android:layout_marginTop="25dp"
+                android:id="@+id/spCities"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_edt"
+                android:hint="Location"
+                android:singleLine="true"
+                android:paddingLeft="15dp"
+                android:textColor="@android:color/black"
+                android:inputType="text"
+                android:focusable="false"
+                android:id="@+id/txtLocation"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_edt"
+                android:hint="Sitting Capacity"
+                android:singleLine="true"
+                android:paddingLeft="15dp"
+                android:textColor="@android:color/black"
+                android:inputType="number"
+                android:id="@+id/txtCapacity"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_edt"
+                android:hint="Charges"
+                android:singleLine="true"
+                android:paddingLeft="15dp"
+                android:textColor="@android:color/black"
+                android:inputType="number"
+                android:id="@+id/txtCaharges"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_edt"
+                android:hint="Charges"
+                android:singleLine="true"
+                android:paddingLeft="15dp"
+                android:textColor="@android:color/black"
+                android:inputType="text"
+                android:id="@+id/txtAcctNum"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venue Type"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Marriage Hall"
+                        android:textSize="13dp"
+                        android:id="@+id/rbMarriageHall"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Party Hall"
+                        android:textSize="13dp"
+                        android:id="@+id/rbPartyHall"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Marquee"
+                        android:textSize="13dp"
+                        android:id="@+id/rbMarquee"/>
+                </RadioGroup>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Services"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="D.J."
+                    android:id="@+id/cbDJ"/>
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Decoration"
+                    android:id="@+id/cbDecoration"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_btn"
+                android:layout_marginTop="15dp"
+                android:text="Add Venue"
+                android:textColor="@android:color/white"
+                android:id="@+id/btnAddVenue"
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

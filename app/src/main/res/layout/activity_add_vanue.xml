@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manager.Ac_AddVanue"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Venue Details"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textSize="22dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_add_image"
+        android:id="@+id/imgAddVenueImage"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_edt"
+                android:hint="Name"
+                android:singleLine="true"
+                android:paddingLeft="15dp"
+                android:textColor="@android:color/black"
+                android:inputType="text"
+                android:id="@+id/txtVenueName"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_edt"
+                android:layout_marginTop="25dp"
+                android:id="@+id/spCities"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_edt"
+                android:hint="Location"
+                android:singleLine="true"
+                android:paddingLeft="15dp"
+                android:textColor="@android:color/black"
+                android:inputType="text"
+                android:focusable="false"
+                android:id="@+id/txtLocation"
+                />
+
+            <EditText
+                android:id="@+id/txtCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_edt"
+                android:hint="Sitting Capacity"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
+            <EditText
+                android:id="@+id/txtCharges"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_edt"
+                android:hint="Venue Charges/Slot"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
+            <EditText
+                android:id="@+id/txtAcctNum"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_edt"
+                android:hint="Acct# to receive Payments"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venue Type"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Marriage Hall"
+                        android:textSize="13dp"
+                        android:id="@+id/rbMarriageHall"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Party Hall"
+                        android:textSize="13dp"
+                        android:id="@+id/rbPartyHall"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Marquee"
+                        android:textSize="13dp"
+                        android:id="@+id/rbMarquee"/>
+                </RadioGroup>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Services"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="D.J."
+                    android:id="@+id/cbDJ"/>
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Decoration"
+                    android:id="@+id/cbDecoration"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_btn"
+                android:layout_marginTop="15dp"
+                android:text="Add Venue"
+                android:id="@+id/btnAddVenue"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

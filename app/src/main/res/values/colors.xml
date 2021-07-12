@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#45B8E8</color>
+    <color name="colorPrimaryDark">#2FB9A7</color>
+    <color name="colorAccent">#2FB9A7</color>
+
+    <color name="appColor">#45B8E8</color>
+    <color name="color_bg_edit_text">#E8E6E6</color>
+
+    <color name="color_bg_btn">#FFAD00</color>
+    <color name="color_bg_li_cookes">#EBEBEB</color>
+
+    <color name="color_green">#049318</color>
+    <color name="color_red">#FF1744</color>
+
+    <color name="black">#000000</color>
+    <color name="purple_500">#8E24AA</color>
+    <color name="purple_200">#8E24AA</color>
+    <color name="purple_700">#8E24AA</color>
+    <color name="teal_200">#008080</color>
+    <color name="teal_700">#008080</color>
+
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="colorAccentDark">#23313F</color>
+    <color name="colorAccentLight">#9E30475E</color>
+    <color name="textColorSecondary">@color/grey_hard</color>
+
+    <color name="backGroundPrimary">@color/background_material_light</color>
+
+    <color name="dialogContentColor">#767676</color>
+
+    <color name="cardFeaturedContent">#E0E0E0</color>
+
+    <color name="grey_hard">#96989A</color>
+    <color name="grey_medium">#BDBFC1</color>
+    <color name="grey_soft">#F5F5F5</color>
+
+    <color name="grey_bg">#EBEFF0</color>
+    <color name="grey_text">#222D31</color>
+    <color name="me_chat_bg">#2FB9A7</color>
+
+    <color name="warning">#ff9933</color>
+    <color name="error">#8b0000</color>
+    <color name="info">#000080</color>
+    <color name="success">#008000</color>
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".Account.VerifyNumber">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        >
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/imglogo_slogan"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify Yourself"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signed Out"
+            android:visibility="invisible"
+            android:layout_gravity="right|left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/black"
+            android:text="Mobile number "
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                app:ccp_countryPreference="pk"
+                app:ccp_defaultNameCode="pk"
+                app:ccpDialog_background="@drawable/bg_edt"
+                android:background="@drawable/bg_edt"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_showNameCode="false"
+                app:ccp_arrowColor="#fFF9A825"
+                app:ccp_contentColor="#696969"
+                app:ccpDialog_textColor="#F9A825"
+                />
+
+            <EditText
+                android:id="@+id/phoneText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:editable="false"
+                android:textColorHint="#696969"
+                android:textColor="#696969"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:background="@drawable/bg_edt"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <android.widget.Button
+                android:id="@+id/sendButton"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:onClick="sendCode"
+                android:background="@drawable/bg_btn"
+                android:textColor="@android:color/white"
+                android:text="Send Code"
+                android:layout_gravity="center" />
+
+            <android.widget.Button
+                android:id="@+id/resendButton"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:onClick="resendCode"
+                android:layout_marginLeft="30dp"
+                android:text="Resend Code"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_btn"
+                android:layout_gravity="center" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:text="Verification Code"
+            />
+        <EditText
+            android:id="@+id/codeText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_edt"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="15dp"
+            android:textColor="#696969"
+            android:layout_marginTop="20dp"
+            android:hint="Code"
+            android:textColorHint="#696969"
+            android:inputType="number"
+            android:layout_gravity="right|left" />
+
+        <android.widget.Button
+            android:id="@+id/verifyButton"
+            android:layout_width="150dp"
+
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bg_btn"
+            android:textColor="@android:color/white"
+            android:onClick="verifyCode"
+            android:text="Verify Code"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <Button
+            android:id="@+id/signoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="signOut"
+            android:visibility="invisible"
+            android:text="Sign Out"
+            android:layout_gravity="left|right|bottom"
+            />
+    </LinearLayout>
+</LinearLayout>

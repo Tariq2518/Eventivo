@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ML.compare_vanues">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/bg_admin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compare "
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venue"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="95dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="50dp"
+                            android:background="@color/black"
+                            android:text="FEATURE"
+                            android:textColor="@color/white"
+                            android:gravity="center"/>
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:gravity="top"
+                            android:background="#54B2AF"
+                            android:layout_height="match_parent">
+
+                            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                android:id="@+id/tvSelect1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#54B2AF"
+                                android:gravity="center"
+                                android:minHeight="50dp"
+                                android:text="Select 1"
+                                android:textColor="@color/white" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/black"
+                            android:layout_height="match_parent"/>
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:gravity="top"
+                            android:background="#54B2AF"
+                            android:layout_height="match_parent">
+                            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="50dp"
+                                android:background="#4D9AAF"
+                                android:text="Select 2"
+                                android:id="@+id/tvSelect2"
+                                android:textColor="@color/white"
+                                android:gravity="center"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="50dp"
+                            android:minHeight="50dp"
+                            android:background="@drawable/bg_dark"
+                            android:text="Type"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tasteOfFood1"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="3"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:minHeight="50dp"
+                            android:text="-"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_dark"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="50dp"
+                            android:minHeight="50dp"
+                            android:background="@color/white"
+                            android:text="-"
+                            android:id="@+id/tasteOfFood2"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="50dp"
+                            android:minHeight="50dp"
+                            android:background="@drawable/bg_light"
+                            android:text="Capacity"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/QoF1"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="3"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:minHeight="50dp"
+                            android:text="-"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_light"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="50dp"
+                            android:minHeight="50dp"
+                            android:background="@color/white"
+                            android:text="-"
+                            android:id="@+id/QoF2"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="50dp"
+                            android:minHeight="50dp"
+                            android:background="@drawable/bg_dark"
+                            android:text="Charges/Head"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="50dp"
+                            android:minHeight="50dp"
+                            android:background="@color/white"
+                            android:text="-"
+                            android:id="@+id/MV1"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_dark"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="50dp"
+                            android:minHeight="50dp"
+                            android:background="@color/white"
+                            android:text="-"
+                            android:id="@+id/MV2"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_light"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="4"
+                            android:background="@drawable/bg_light"
+                            android:gravity="center"
+                            android:minHeight="50dp"
+                            android:text="Location"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="50dp"
+                            android:minHeight="50dp"
+                            android:background="@color/white"
+                            android:text="-"
+                            android:id="@+id/VFM1"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_light"/>
+
+                        <TextView
+                            android:id="@+id/VFM2"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="3"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:minHeight="50dp"
+                            android:text="-"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="50dp"
+                            android:minHeight="50dp"
+                            android:background="@drawable/bg_dark"
+                            android:text="Distance"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="50dp"
+                            android:minHeight="50dp"
+                            android:background="@color/white"
+                            android:text="-"
+                            android:id="@+id/OA1"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_dark"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="50dp"
+                            android:minHeight="50dp"
+                            android:background="@color/white"
+                            android:text="-"
+                            android:id="@+id/OA2"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="50dp"
+                            android:minHeight="50dp"
+                            android:background="@drawable/bg_light"
+                            android:text="Services"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/Amb1"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="3"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:minHeight="50dp"
+                            android:text="-"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_light"/>
+
+                        <TextView
+                            android:id="@+id/Amb2"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="3"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:minHeight="50dp"
+                            android:text="-"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="4"
+                            android:background="@drawable/bg_dark"
+                            android:gravity="center"
+                            android:minHeight="50dp"
+                            android:text="Rating"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/OAS1"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="3"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:minHeight="50dp"
+                            android:text="-"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_dark" />
+
+                        <TextView
+                            android:id="@+id/OAS2"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="3"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:minHeight="50dp"
+                            android:text="-"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="4"
+                            android:background="@drawable/bg_light"
+                            android:gravity="center"
+                            android:minHeight="50dp"
+                            android:text="Speed OF Service"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/SOS1"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="3"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:minHeight="50dp"
+                            android:text="-"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_light"/>
+
+                        <TextView
+                            android:id="@+id/SOS2"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="3"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:minHeight="50dp"
+                            android:text="-"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Still unable to decide which is better?"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_btn"
+                android:text="which is best"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:onClick="CompareWithML"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:id="@+id/compare"
+                android:visibility="gone"
+                android:text=""
+                />
+            <androidx.core.widget.ContentLoadingProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:id="@+id/progressBar"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

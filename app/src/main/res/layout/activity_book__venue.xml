@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.Ac_Book_Venue"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_btn_disabled"
+        android:text="Select Date"
+        android:textColor="@android:color/white"
+        android:onClick="selectDate"
+        android:id="@+id/btnSelectDate"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_btn_disabled"
+        android:text="Select Slot"
+        android:textColor="@android:color/white"
+        android:onClick="selectSlot"
+        android:visibility="invisible"
+        android:id="@+id/btnSelectSlot"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_btn_disabled"
+        android:text="Enter Required Capacity"
+        android:textColor="@android:color/white"
+        android:onClick="EnterRequiredCapacity"
+        android:visibility="invisible"
+        android:id="@+id/btnEnterCapacity"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_btn_disabled"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="Enter Trx ID"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        android:id="@+id/txtEnterTrxId"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_btn"
+        android:text="Book Venue"
+        android:textColor="@android:color/white"
+        android:onClick="bookVenue"
+        android:visibility="invisible"
+        android:id="@+id/btnBookVenue"
+        />
+<!--    <ListView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:id="@+id/lvSlots"-->
+<!--        />-->
+</LinearLayout>

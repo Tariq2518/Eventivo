@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a time Slot"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_btn"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"
+        android:text="12 PM - 4 PM"
+        android:textSize="18dp"
+        android:id="@+id/btnSlot1"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_btn"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"
+        android:text="6 PM - 10 PM"
+        android:textSize="18dp"
+        android:id="@+id/btnSlot2"/>
+
+</LinearLayout>

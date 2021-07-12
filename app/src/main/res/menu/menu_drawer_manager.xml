@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/ic_home"
+            android:title="Home"
+            android:id="@+id/btnDrawerHome"/>
+        <item
+            android:icon="@drawable/ic_add"
+            android:title="Add Venue"
+            android:id="@+id/btnDrawerAddVenue"/>
+<!--        <item-->
+<!--            android:icon="@drawable/ic_booking"-->
+<!--            android:title="Manage Booking"-->
+<!--            android:id="@+id/btnDrawerBooking"/>-->
+        <item
+            android:icon="@drawable/ic_payment"
+            android:title="Manage Payments"
+            android:id="@+id/btnDrawerPayments"/>
+        <item
+            android:icon="@drawable/ic_chat"
+            android:title="Chat"
+            android:id="@+id/btnDrawerChat"/>
+        <item
+            android:icon="@drawable/ic_logout"
+            android:title="Sign Out"
+            android:id="@+id/btnDrawerLogout"/>
+    </group>
+</menu>

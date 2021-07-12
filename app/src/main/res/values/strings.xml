@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Eventivo</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="press_again_exit_app">Press again to exit</string>
+
+    <string name="settings_file_name">userDataForChat</string>
+    <string name="error_authetication_failed">Authentication failed.</string>
+    <string name="error_could_not_connect">Could not connect</string>
+    <string name="error_login_failed">Login failed</string>
+
+    <string name="terms_and_condition">
+
+       \n\n To ensure that your agreement is ironclad, there are several common clauses you should be aware of. Here is a checklist to help you out:
+\n\n
+<b>Define key words:</b> So that users don’t misinterpret your terms, you need to define what  potentially ambiguous words in your agreement mean. For example, Facebook refers to all of its brands, products and services as “Facebook Services,” or “Services.” By being explicit as possible, you lessen the chances of a user misinterpreting your intent.
+        \n<b>Rights and Responsibilities of Use:</b> This informs users of what rights they have when using your product. Typically, this means that users are not allowed to do anything that infringes on someone else’s rights or breaks the law.
+\n<b>Proper or Expected Usage:</b> This explains how your app is intended to be used, and what users are expected to do when they use it. It sounds straightforward, but it gives you boundaries in the event that a user abuses your app.
+        \n<b>Intellectual Property Protection: </b>This protects your Intellectual Property by informing users who the proprietor is, and what exactly defines your Intellectual Property.
+  \n      <b>Accountability:</b> You should inform users that they will be held accountable for their actions and conduct.
+\n<b>Payment Details:</b> Users need to know all the details when it comes to payments. Do they pay a subscription fee or a membership fee? How do they go about making payments?
+\n<b>Disclaimers and Warranties:</b> Users want to know if your products come with warranties, or if you offer refunds.
+\n<b>Account Termination:</b> If a user decides to eliminate their account, you need to explain how they are to do it. Include a carefully laid out procedure that guides them each step of the way.
+\n<b>Exclusion or Limitation of Liability:</b> Should a user incur some kind of damage or harm by using your app, you can actually limit or even prevent any claims they may make against you.
+\n<b>Notify Users upon Modification of Terms:</b> You need to inform users if and when you make changes to your app, and explain how these changes will affect them.
+\nFor more information about these necessary and recommended clauses, read our guide on how to write terms and conditions.
+\n\n
+<b>Special Considerations</b>
+Some apps are more complex than others. For example, an alarm clock app has a simple, straightforward purpose and function. Something like Dropbox, however, is more complicated because its service is more involved. Since not all apps are the same, the terms you include in your agreement will vary.
+
+    </string>
+
+
+    <string name="about_us">
+       \n When you understand your buyer persona and you work in a creative market, you usually have the freedom to make your about us page as goofy as you want.
+\n\n
+Even though Pulp Fingers (no longer active) used real pictures of its employees, it is highly relevant to its work and showed a great deal of personality. The page\'s descriptions did a perfect job of balancing a summary of the team\'s qualifications and personal notes that helped you get to know it.
+\n\n
+The design also looked and felt like a mobile app, which was apt as app designers.
+    </string>
+    <string name="title_activity_ac__admin_home">Admin Home</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
