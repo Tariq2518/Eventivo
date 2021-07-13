@@ -16,6 +16,7 @@
         <ImageView
             android:layout_width="300dp"
             android:layout_height="300dp"
+            android:padding="30dp"
             android:src="@drawable/imglogo_slogan"
             />
         <EditText

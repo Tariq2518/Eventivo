@@ -8,7 +8,7 @@
             android:id="@+id/btnDrawerHome"/>
         <item
             android:icon="@drawable/ic_add"
-            android:title="Add Venue"
+            android:title="Manager SignIn"
             android:id="@+id/btnDrawerAddVenue"/>
         <item
             android:icon="@drawable/ic_search"

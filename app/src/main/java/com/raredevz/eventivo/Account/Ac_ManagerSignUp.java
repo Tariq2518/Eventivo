@@ -269,6 +269,10 @@ public class Ac_ManagerSignUp extends AppCompatActivity {
                         if (!task.isSuccessful()) {
                             Toast.makeText(Ac_ManagerSignUp.this, "Error : "+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
+                        else{
+                            startActivity(new Intent(getApplicationContext(), Ac_Manager_Login.class));
+                            finish();
+                        }
                     }
                 });
             }catch (Exception e){

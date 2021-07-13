@@ -343,10 +343,28 @@ public class Ac_AddVanue extends AppCompatActivity {
         });
         
     }
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+
+
     Location location;
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
         if (requestCode == Constants.PLACE_PICKER_REQUEST) {
             if (resultCode == Activity.RESULT_OK && data != null) {
                 AddressData addressData = data.getParcelableExtra(Constants.ADDRESS_INTENT);
@@ -429,12 +447,15 @@ public class Ac_AddVanue extends AppCompatActivity {
                                                 progressDialog.dismiss();
                                                 if (task.isSuccessful()){
                                                     Toast.makeText(Ac_AddVanue.this, "Venue Added", Toast.LENGTH_SHORT).show();
+                                                    notify();
                                                     onBackPressed();
+
                                                 }else {
                                                     Toast.makeText(Ac_AddVanue.this, "Error "+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                                 }
                                             }
                                         });
+
 
                               
                                 //   Uri downloadUrl = taskSnapshot.getDownloadUrl();
@@ -488,5 +509,7 @@ public class Ac_AddVanue extends AppCompatActivity {
         }
 
     }
+
+
     //endregion
 }

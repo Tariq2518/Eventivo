@@ -380,6 +380,7 @@ public class Ac_EditVenue extends AppCompatActivity {
                                     public void onComplete(@NonNull Task<Void> task) {
                                         if (task.isSuccessful()){
                                             Toast.makeText(Ac_EditVenue.this, "Venue Updated", Toast.LENGTH_SHORT).show();
+                                            notify();
                                             onBackPressed();
                                         }else {
                                             AlertMessage.showMessage(Ac_EditVenue.this,"Error "+task.getException().getMessage());
